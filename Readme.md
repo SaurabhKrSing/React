@@ -21,8 +21,8 @@
 | [What is Fragments](#What-is-Fragments)                                                 |
 | [Why we use Fragments](#Why-we-use-Fragments)                                           |
 | [How to use Fragments](#How-to-use-Fragments)                                           |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
+| [What is Map Method](#What-is-Map-Method)                                               |
+| [What is Conditional Rendering](#What-is-Conditional-Rendering)                         |
 | [](#)                                                                                   |
 | [](#)                                                                                   |
 | [](#)                                                                                   |
@@ -435,4 +435,23 @@
   ---
 
 
-### 
+### What is Map Method
+
+  The `map()` method in React is used to iterate over an array and return a new array of modified elements based on a provided function, allowing dynamic rendering of elements based on data.
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
+### What is Conditional Rendering
+
+  Conditional rendering in React involves displaying different components or elements based on certain conditions. It allows developers to control what gets rendered in the UI based on variables, state, or props, enabling dynamic and interactive user interfaces.
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
+###  
