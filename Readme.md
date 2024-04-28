@@ -8,6 +8,7 @@
 | [What is React](#What-is-React)                                                         |
 | [Why we use React](#Why-we-use-React)                                                   |
 | [What is Components](#What-is-Components)                                               |
+| [Type of Components](#Type-of-Components)                                               |
 | [What is States](#What-is-States)                                                       |
 | [Difference between components and states](#Difference-between-components-and-states)   |
 | [What is Hooks](#What-is-Hooks)                                                         |
@@ -17,9 +18,9 @@
 | [What is SSR (Server Side Rendered)](#What-is-SSR-(Server-Side-Rendered))               |
 | [What is SSG (Static Site Generation)](#What-is-SSG-(Static-Site-Generation))           |
 | [What is Vite](#What-is-Vite)                                                           |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
+| [What is Fragments](#What-is-Fragments)                                                 |
+| [Why we use Fragments](#Why-we-use-Fragments)                                           |
+| [How to use Fragments](#How-to-use-Fragments)                                           |
 | [](#)                                                                                   |
 | [](#)                                                                                   |
 | [](#)                                                                                   |
@@ -99,6 +100,68 @@
   ---
 
 
+### Type of Components
+
+  In React, components can be classified into two main types:
+
+  1. **Functional Components**: Also known as stateless components, these are JavaScript functions that return JSX elements. They are simpler, easy to read, and maintain.
+
+  2. **Class Components**: Also known as stateful components, these are ES6 classes that extend from `React.Component`. They have their own state and lifecycle methods.
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
+### Types of Exporting Components 
+
+  There are two types of exporting components in React: default export and named export.
+
+  1. **Default export** - A default export is a special type of export that can only be used once in a file. It is typically used to export a single component, value, or class to another component. To export a component as a default export, use the following syntax:
+  
+  ```JavaScript
+
+  // MyComponent.js
+  export default function MyComponent() {
+    return <div>Hello, world!</div>;
+  }
+  To import a default export, use the following syntax:
+  JavaScript
+
+  // App.js
+  import MyComponent from './MyComponent.js';
+
+  function App() {
+    return <MyComponent />;
+  }
+  ```
+
+  2. **Named export** - A named export is a type of export that can be used multiple times in a file. It is typically used to export multiple components, values, or classes to another component. To export a component as a named export, use the following syntax:
+  
+  ```JavaScript
+
+  // MyComponent.js
+  export function MyComponent() {
+    return <div>Hello, world!</div>;
+  }
+  To import a named export, use the following syntax:
+  JavaScript
+
+  // App.js
+  import { MyComponent } from './MyComponent.js';
+
+  function App() {
+    return <MyComponent />;
+  }
+  ```
+  
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
 ### What is States
 
   State represents the data managed internally by a component, including form input, fetched data, and UI-related information like the visibility of a modal. Global state refers to data relevant to the entire app rather than a single component.
@@ -146,49 +209,49 @@
 
   1. **useState**: useState hook manages component state by allowing functional components to hold and update state variables. 
 
-    ```jsx
-    import React, { useState } from 'react';
-    function Counter() {
-      const [count, setCount] = useState(0);
-      return (
-        <div>
-          <p>Count: {count}</p>
-          <button onClick={() => setCount(count + 1)}>Increment</button>
-        </div>
-      );
-    }
-    ```
+  ```jsx
+  import React, { useState } from 'react';
+  function Counter() {
+    const [count, setCount] = useState(0);
+    return (
+      <div>
+        <p>Count: {count}</p>
+        <button onClick={() => setCount(count + 1)}>Increment</button>
+      </div>
+    );
+  }
+  ```
 
   2. **useEffect**: useEffect handles side effects in functional components, such as data fetching or DOM manipulation, after component renders. 
 
-    ```jsx
-    import React, { useState, useEffect } from 'react';
-    function Example() {
-      const [count, setCount] = useState(0);
-      useEffect(() => {
-        document.title = `You clicked ${count} times`;
-      }, [count]);
-      return (
-        <div>
-          <p>You clicked {count} times</p>
-          <button onClick={() => setCount(count + 1)}>
-            Click me
-          </button>
-        </div>
-      );
-    }
-    ```
+  ```jsx
+  import React, { useState, useEffect } from 'react';
+  function Example() {
+    const [count, setCount] = useState(0);
+    useEffect(() => {
+      document.title = `You clicked ${count} times`;
+    }, [count]);
+    return (
+      <div>
+        <p>You clicked {count} times</p>
+        <button onClick={() => setCount(count + 1)}>
+          Click me
+        </button>
+      </div>
+    );
+  }
+  ```
 
   3. **useContext**: useContext provides access to React context within functional components, allowing them to consume context values. 
 
-    ```jsx
-    import React, { useContext } from 'react';
-    import MyContext from './MyContext';
-    function MyComponent() {
-      const value = useContext(MyContext);
-      return <div>{value}</div>;
-    }
-    ```
+  ```jsx
+  import React, { useContext } from 'react';
+  import MyContext from './MyContext';
+  function MyComponent() {
+    const value = useContext(MyContext);
+    return <div>{value}</div>;
+  }
+  ```
 
   4. **useReducer**: useReducer is an alternative to useState for managing complex state logic. 
 
@@ -219,63 +282,63 @@
 
   5. **useCallback**: useCallback memoizes callback functions, preventing unnecessary re-renders. 
 
-    ```jsx
-    import React, { useState, useCallback } from 'react';
-    function CounterButton({ onClick }) {
-      return <button onClick={onClick}>Click Me</button>;
-    }
-    function ParentComponent() {
-      const [count, setCount] = useState(0);
-      const increment = useCallback(() => setCount(count + 1), [count]);
-      return (
-        <div>
-          <p>Count: {count}</p>
-          <CounterButton onClick={increment} />
-        </div>
-      );
-    }
-    ```
+  ```jsx
+  import React, { useState, useCallback } from 'react';
+  function CounterButton({ onClick }) {
+    return <button onClick={onClick}>Click Me</button>;
+  }
+  function ParentComponent() {
+    const [count, setCount] = useState(0);
+    const increment = useCallback(() => setCount(count + 1), [count]);
+    return (
+      <div>
+        <p>Count: {count}</p>
+        <CounterButton onClick={increment} />
+      </div>
+    );
+  }
+  ```
 
   6. **useMemo**: useMemo memoizes expensive computations, optimizing performance by caching computed values. 
 
-    ```jsx
-    import React, { useState, useMemo } from 'react';
-    function ExpensiveCalculation({ count }) {
-      // This expensive calculation will only run when `count` changes
-      const result = useMemo(() => {
-        console.log('Running expensive calculation');
-        return count * 2;
-      }, [count]);
-      return <p>Result: {result}</p>;
-    }
-    function ParentComponent() {
-      const [count, setCount] = useState(0);
-      return (
-        <div>
-          <button onClick={() => setCount(count + 1)}>Increment</button>
-          <ExpensiveCalculation count={count} />
-        </div>
-      );
-    }
-    ```
+  ```jsx
+  import React, { useState, useMemo } from 'react';
+  function ExpensiveCalculation({ count }) {
+    // This expensive calculation will only run when `count` changes
+    const result = useMemo(() => {
+      console.log('Running expensive calculation');
+      return count * 2;
+    }, [count]);
+    return <p>Result: {result}</p>;
+  }
+  function ParentComponent() {
+    const [count, setCount] = useState(0);
+    return (
+      <div>
+        <button onClick={() => setCount(count + 1)}>Increment</button>
+        <ExpensiveCalculation count={count} />
+      </div>
+    );
+  }
+  ```
 
   7. **useRef**: useRef creates a mutable reference object that persists across component re-renders. 
 
-    ```jsx
-    import React, { useRef } from 'react';
-    function FocusInput() {
-      const inputRef = useRef(null);
-      const handleClick = () => {
-        inputRef.current.focus();
-      };
-      return (
-        <div>
-          <input ref={inputRef} type="text" />
-          <button onClick={handleClick}>Focus Input</button>
-        </div>
-      );
-    }
-    ```
+  ```jsx
+  import React, { useRef } from 'react';
+  function FocusInput() {
+    const inputRef = useRef(null);
+    const handleClick = () => {
+      inputRef.current.focus();
+    };
+    return (
+      <div>
+        <input ref={inputRef} type="text" />
+        <button onClick={handleClick}>Focus Input</button>
+      </div>
+    );
+  }
+  ```
 
 
   **[⬆ Back to Top](#table-of-contents)**
@@ -337,4 +400,39 @@
   ---
 
 
-###
+### What is Fragments
+
+  Fragments in React are a feature that allows grouping multiple children elements without creating an additional DOM element, improving code readability and maintainability.
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
+### Why we use Fragments
+
+  1. **Avoids unnecessary DOM elements:** Fragments allow grouping multiple React elements without adding extra nodes to the DOM.
+  2. **Improved readability:** Helps keep JSX code cleaner and more concise by eliminating wrapper divs or spans.
+  3. **Better performance:** Reduces the number of nodes in the DOM, leading to faster rendering and improved performance.
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
+### How to use Fragments
+
+  1. Import `Fragment` from React: `import React, { Fragment } from 'react';`
+  2. Use `<Fragment>` and `</Fragment>` to wrap multiple elements.
+  3. Alternatively, use shorthand syntax `<>` and `</>` instead.
+  4. This helps avoid unnecessary wrapper divs in the DOM.
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
+### 
