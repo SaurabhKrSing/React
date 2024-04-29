@@ -23,9 +23,9 @@
 | [How to use Fragments](#How-to-use-Fragments)                                           |
 | [What is Map Method](#What-is-Map-Method)                                               |
 | [What is Conditional Rendering](#What-is-Conditional-Rendering)                         |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
+| [What is Props](#What-is-Props)                                                         |
+| [How to use Props](#How-to-use-Props)                                                   |
+| [Usage of Props](#Usage-of-Props)                                                       |
 | [](#)                                                                                   |
 | [](#)                                                                                   |
 | [](#)                                                                                   |
@@ -454,4 +454,80 @@
   ---
 
 
-###  
+### What is Props 
+
+  Props (short for properties) are a way to pass data from parent to child components in React. They are read-only and help make components reusable by allowing dynamic data to be passed down to child components, influencing their behavior and appearance.
+
+  Props Data flows one-way (downwards).
+  Props are immutable.
+  Used for communication between components.
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
+### How to use Props
+
+  To implement props in React, follow these steps:
+
+  1. Pass data from a parent component to a child component by adding attributes to the child component's JSX tag.
+  2. Access the passed data in the child component using the `props` object.
+  3. Use the data received via props to render dynamic content or influence the behavior of the child component.
+
+  Here's an example:
+
+  Parent Component:
+
+  ```jsx
+  import React from 'react';
+  import ChildComponent from './ChildComponent';
+
+  function ParentComponent() {
+    return (
+      <div>
+        <ChildComponent name="John" age={30} />
+      </div>
+    );
+  }
+
+  export default ParentComponent;
+  ```
+
+  Child Component:
+
+  ```jsx
+  import React from 'react';
+
+  function ChildComponent(props) {
+    return (
+      <div>
+        <p>Name: {props.name}</p>
+        <p>Age: {props.age}</p>
+      </div>
+    );
+  }
+
+  export default ChildComponent;
+  ```
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
+### Usage of Props
+
+  1. Pass data from  parent to child component.
+  2. Make components reusable.
+  3. Defined as attributes in JSX.
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
+### 
