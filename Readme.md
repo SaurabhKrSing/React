@@ -6,13 +6,16 @@
 | Questions                                                                               |
 | --------------------------------------------------------------------------------------- |
 | [What is React](#What-is-React)                                                         |
+| [Why React are so popular](#Why-React-are-so-popular)                                   |
+| [Features of React](#Features-of-React)                                                 |
+| [What is the folder structure in react](#What-is-the-folder-structue-in-react)          |
 | [Why we use React](#Why-we-use-React)                                                   |
 | [What is Components](#What-is-Components)                                               |
 | [Type of Components](#Type-of-Components)                                               |
 | [What is States](#What-is-States)                                                       |
 | [Difference between components and states](#Difference-between-components-and-states)   |
 | [What is Hooks](#What-is-Hooks)                                                         |
-| [Type of Hooks](#Type-of-Hooks)                                                         |
+| [Types of Hooks](#Types-of-Hooks)                                                       |
 | [What is JSX (JavaScript Syntax Extension)](#What-is-JSX-(JavaScript-Syntax-Extension)) |
 | [What is SPA (Single Page Application)](#What-is-SPA-(Single-Page-Application))         |
 | [What is SSR (Server Side Rendered)](#What-is-SSR-(Server-Side-Rendered))               |
@@ -22,13 +25,13 @@
 | [Why we use Fragments](#Why-we-use-Fragments)                                           |
 | [How to use Fragments](#How-to-use-Fragments)                                           |
 | [What is Map Method](#What-is-Map-Method)                                               |
+| [What is React Render](#What-is-React-Render)                                           |
 | [What is Conditional Rendering](#What-is-Conditional-Rendering)                         |
 | [What is Props](#What-is-Props)                                                         |
 | [How to use Props](#How-to-use-Props)                                                   |
 | [Usage of Props](#Usage-of-Props)                                                       |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
+| [Difference between props and state](#Difference-between-props-and-state)               |
+| [What is CSS Modules](#What-is-CSS-Modules)                                             |
 | [](#)                                                                                   |
 | [](#)                                                                                   |
 | [](#)                                                                                   |
@@ -69,6 +72,45 @@
   ---
 
 
+### Why React are so popular
+
+  React's popularity stems from its efficient virtual DOM, which enhances performance. Its component-based architecture fosters modular and reusable code, easing development and maintenance. React's robust ecosystem, including libraries like Redux and Next.js, offers extensive tooling and support, making it a top choice for building dynamic and scalable web applications.
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
+### Features of React
+  React offers several key features:
+
+  1. **Virtual DOM**: React uses a virtual representation of the DOM to optimize updates and improve performance.
+
+  2. **Component-Based Architecture**: UIs are built using reusable components, simplifying development and maintenance.
+
+  3. **JSX**: JSX allows writing HTML-like syntax within JavaScript, facilitating the creation of UI components.
+
+  4. **Unidirectional Data Flow**: Data flows in a single direction, making the application predictable and easier to debug.
+
+  5. **React Hooks**: Hooks provide a way to use state and lifecycle features in functional components, reducing the need for class components.
+
+  6. **Declarative**: React code is declarative, meaning it describes the desired result rather than the steps to achieve it, resulting in more concise and readable code.
+
+  7. **Composition**: Components can be composed together to create complex UIs from simple building blocks.
+
+  8. **React Router**: React Router enables client-side routing, allowing for navigation and handling of different views within a single-page application.
+
+  9. **Server-Side Rendering**: React can be rendered on the server-side, improving performance and SEO.
+
+  10. **Community and Ecosystem**: React has a vast ecosystem with libraries, tools, and community support, making it suitable for building various types of applications.
+  
+  
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
 ###  Why we use React
 
   React is a popular JavaScript library used for building user interfaces in web development. Here are some key points highlighting its significance:
@@ -85,6 +127,27 @@
   10. **Flexibility**: React can be easily integrated with other libraries and frameworks, allowing developers to leverage existing tools and technologies.
 
 
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
+### What is the folder structure in react
+
+  In React, a common folder structure includes:
+
+  1. **src**: Contains the source code of the application.
+  2. **public**: Houses static assets and the HTML file.
+  3. **components**: Stores reusable UI components.
+  4. **pages**: Contains top-level components for different routes.
+  5. **assets**: Holds images, fonts, or other media files.
+  6. **styles**: Stores CSS or SCSS files for styling.
+  7. **utils**: Contains utility functions or helper classes.
+  8. **tests**: Holds test files for unit or integration testing.
+  9. **hooks**: Stores custom React hooks.
+  10. **services**: Contains code for interacting with APIs or external services.
+   
+   
   **[⬆ Back to Top](#table-of-contents)**
 
   ---
@@ -435,9 +498,47 @@
   ---
 
 
-### What is Map Method
+### What is Map() Method
 
   The `map()` method in React is used to iterate over an array and return a new array of modified elements based on a provided function, allowing dynamic rendering of elements based on data.
+
+  ```jsx
+  import React from 'react';
+
+  function App() {
+    const numbers = [1, 2, 3, 4, 5];
+
+    return (
+      <div>
+        <h1>Numbers List:</h1>
+        <ul>
+          {numbers.map(number => (
+            <li key={number}>{number}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+
+  export default App;
+  ```
+
+  In this example, `numbers.map()` iterates over the `numbers` array and returns a new array of `<li>` elements, each containing a number from the original array. The `key` prop is added to each `<li>` element to help React identify which items have changed, been added, or been removed efficiently.
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  
+
+### What is React Render
+
+  React render is the process of converting React components into a DOM (Document Object Model) representation. It updates the UI based on changes in component state or props, ensuring a reactive user interface.
 
 
   **[⬆ Back to Top](#table-of-contents)**
@@ -448,6 +549,7 @@
 ### What is Conditional Rendering
 
   Conditional rendering in React involves displaying different components or elements based on certain conditions. It allows developers to control what gets rendered in the UI based on variables, state, or props, enabling dynamic and interactive user interfaces.
+
 
   **[⬆ Back to Top](#table-of-contents)**
 
@@ -530,4 +632,147 @@
   ---
 
 
+### Difference between props and state 
+
+  | Props                                                                                       | State                                                                                                                   |
+  | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+  | Received from parent component.                                                             | Managed internally within the component.                                                                                |
+  | Immutable and read-only.                                                                    | Mutable and can be updated using setState().                                                                            |
+  | Passed down from parent to child components.                                                | Local to the component where it's defined.                                                                              |
+  | Used to pass data from parent to child components.                                          | Used to manage component-specific data.                                                                                 |
+  | Props changes trigger re-rendering in child components.                                     | State changes trigger re-rendering in the component itself.                                                             |
+  | Can be accessed using `this.props` in class components and directly in function components. | Can be accessed using `this.state` in class components and using array destructuring in function components with hooks. |
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
+### What is CSS Modules
+
+  1. Localized class names to avoid global conflicts.
+  2. Styles are scoped to individual components.
+  3. Helps in creating components-specific styles.
+  4. Automatically generates unique class names.
+  5. Promotes modular and maintainable CSS.
+  6. Can use alongside global CSS when needed.
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+
+
 ### 
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
+  **[⬆ Back to Top](#table-of-contents)**
+
+  ---
