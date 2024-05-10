@@ -3,55 +3,56 @@
 
 ### Table of Contents
 
-| Questions                                                                               |
-| --------------------------------------------------------------------------------------- |
-| [What is React](#What-is-React)                                                         |
-| [Why React are so popular](#Why-React-are-so-popular)                                   |
-| [Features of React](#Features-of-React)                                                 |
-| [What is the folder structure in react](#What-is-the-folder-structue-in-react)          |
-| [Why we use React](#Why-we-use-React)                                                   |
-| [What is Components](#What-is-Components)                                               |
-| [Type of Components](#Type-of-Components)                                               |
-| [What is States](#What-is-States)                                                       |
-| [Difference between components and states](#Difference-between-components-and-states)   |
-| [What is Hooks](#What-is-Hooks)                                                         |
-| [Types of Hooks](#Types-of-Hooks)                                                       |
-| [What is JSX (JavaScript Syntax Extension)](#What-is-JSX-(JavaScript-Syntax-Extension)) |
-| [What is SPA (Single Page Application)](#What-is-SPA-(Single-Page-Application))         |
-| [What is SSR (Server Side Rendered)](#What-is-SSR-(Server-Side-Rendered))               |
-| [What is SSG (Static Site Generation)](#What-is-SSG-(Static-Site-Generation))           |
-| [What is Vite](#What-is-Vite)                                                           |
-| [What is Fragments](#What-is-Fragments)                                                 |
-| [Why we use Fragments](#Why-we-use-Fragments)                                           |
-| [How to use Fragments](#How-to-use-Fragments)                                           |
-| [What is Map Method](#What-is-Map-Method)                                               |
-| [What is React Render](#What-is-React-Render)                                           |
-| [What is Conditional Rendering](#What-is-Conditional-Rendering)                         |
-| [What is Props](#What-is-Props)                                                         |
-| [How to use Props](#How-to-use-Props)                                                   |
-| [Usage of Props](#Usage-of-Props)                                                       |
-| [Difference between props and state](#Difference-between-props-and-state)               |
-| [What is CSS Modules](#What-is-CSS-Modules)                                             |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
-| [](#)                                                                                   |
+| Questions                                                                                                                         |
+| --------------------------------------------------------------------------------------------------------------------------------- |
+| [What is React](#What-is-React)                                                                                                   |
+| [Why React are so popular](#Why-React-are-so-popular)                                                                             |
+| [Features of React](#Features-of-React)                                                                                           |
+| [What is the folder structure in react](#What-is-the-folder-structue-in-react)                                                    |
+| [Why we use React](#Why-we-use-React)                                                                                             |
+| [What is Components](#What-is-Components)                                                                                         |
+| [Type of Components](#Type-of-Components)                                                                                         |
+| [What is States](#What-is-States)                                                                                                 |
+| [Difference between components and states](#Difference-between-components-and-states)                                             |
+| [What is Hooks](#What-is-Hooks)                                                                                                   |
+| [Types of Hooks](#Types-of-Hooks)                                                                                                 |
+| [What is JSX (JavaScript Syntax Extension)](#What-is-JSX-(JavaScript-Syntax-Extension))                                           |
+| [What is SPA (Single Page Application)](#What-is-SPA-(Single-Page-Application))                                                   |
+| [What is SSR (Server Side Rendered)](#What-is-SSR-(Server-Side-Rendered))                                                         |
+| [What is SSG (Static Site Generation)](#What-is-SSG-(Static-Site-Generation))                                                     |
+| [What is Vite](#What-is-Vite)                                                                                                     |
+| [What is Fragments](#What-is-Fragments)                                                                                           |
+| [Why we use Fragments](#Why-we-use-Fragments)                                                                                     |
+| [How to use Fragments](#How-to-use-Fragments)                                                                                     |
+| [What is Map Method](#What-is-Map-Method)                                                                                         |
+| [What is React Render](#What-is-React-Render)                                                                                     |
+| [What is Conditional Rendering](#What-is-Conditional-Rendering)                                                                   |
+| [What is Props](#What-is-Props)                                                                                                   |
+| [How to use Props](#How-to-use-Props)                                                                                             |
+| [Usage of Props](#Usage-of-Props)                                                                                                 |
+| [Difference between props and state](#Difference-between-props-and-state)                                                         |
+| [What is CSS Modules](#What-is-CSS-Modules)                                                                                       |
+| [What is Webpack in React](#What-is-Webpack-in-React)                                                                             |
+| [What is lifecycle in React](#What-is-lifecycle-in-React)                                                                         |
+| [What are two phases of the component lifecycle](#What-are-two-phases-of-the-component-lifecycle)                                 |
+| [What is ref in React](#What-is-ref-in-React)                                                                                     |
+| [What is React Router](#What-is-React-Router)                                                                                     |
+| [What is handling form inputs](#What-is-handling-form-inputs)                                                                     |
+| [What is approaches for handling form inputs in react](#What-is-approaches-for-handling-form-inputs-in-react)                     |
+| [What is difference between Declerative and Imparative in React](#What-is-difference-between-Declerative-and-Imparative-in-React) |
+| [](#)                                                                                                                             |
+| [](#)                                                                                                                             |
+| [](#)                                                                                                                             |
+| [](#)                                                                                                                             |
+| [](#)                                                                                                                             |
+| [](#)                                                                                                                             |
+| [](#)                                                                                                                             |
+| [](#)                                                                                                                             |
+| [](#)                                                                                                                             |
+| [](#)                                                                                                                             |
+| [](#)                                                                                                                             |
+| [](#)                                                                                                                             |
+| [](#)                                                                                                                             |
 
 
 
@@ -664,28 +665,104 @@
   ---
 
 
-### 
+### What is Webpack in React
+
+  Webpack is a module bundler for JavaScript applications. It processes various modules, such as JavaScript, CSS, and images, and generates optimized bundles for the browser. It enables features like code splitting, hot module replacement, and tree shaking, enhancing the development and performance of React applications.
+
+
   **[⬆ Back to Top](#table-of-contents)**
 
   ---
+
+
+### What is lifecycle in React
+
+  In React, the lifecycle refers to the sequence of events that occur during the lifespan of a component, from its creation to its destruction. It includes mounting, updating, and unmounting phases, each with corresponding lifecycle methods that allow developers to hook into and execute code at specific points.
+
+
   **[⬆ Back to Top](#table-of-contents)**
 
   ---
+
+
+### What are two phases of the component lifecycle
+
+  In React, mounting and unmounting are two phases of the component lifecycle.
+
+  1. **Mounting**: This phase occurs when a component is first created and inserted into the DOM. During mounting, the following methods are called in order:
+     - `constructor()`
+     - `static getDerivedStateFromProps()`
+     - `render()`
+     - `componentDidMount()`
+
+  2. **Unmounting**: This phase occurs when a component is removed from the DOM. During unmounting, the `componentWillUnmount()` method is called, allowing the component to perform any necessary cleanup, such as cancelling network requests or removing event listeners.
+  
+  
   **[⬆ Back to Top](#table-of-contents)**
 
   ---
+
+
+### What is ref in React
+
+  In React, a ref is an object that provides a way to reference a DOM element or a React component instance directly. Refs are commonly used to access or modify the DOM or component outside of the typical React data flow. They are created using the useRef() hook or the React.createRef() method. Refs are particularly useful for managing focus, accessing DOM measurements, or integrating with third-party libraries that require direct access to DOM elements.
+
   **[⬆ Back to Top](#table-of-contents)**
 
   ---
+
+
+### What is React Router
+
+  React Router is a popular library for declaratively managing routing and navigation in React applications. It enables client-side routing by synchronizing the UI with the URL, allowing for dynamic rendering of different views based on the current URL, enhancing the user experience in single-page applications.
+
+
   **[⬆ Back to Top](#table-of-contents)**
 
   ---
+
+
+### What is handling form inputs
+
+  Handling form inputs in React involves managing the state of form data and responding to user interactions, such as changes to input values or form submissions. This can be done using controlled components, where form data is controlled by React state, or uncontrolled components, where the DOM handles form data. Handling form inputs typically includes tasks such as updating state, validating input, and submitting form data.
+
+
   **[⬆ Back to Top](#table-of-contents)**
 
   ---
+
+
+### What is approaches for handling form inputs in react
+
+  In React, there are several approaches for handling form inputs:
+
+  1. **Controlled Components**: Form inputs whose values are controlled by React state. Changes to the input value are handled by updating the state, allowing React to manage and synchronize the form state with the component's state.
+
+  2. **Uncontrolled Components**: Form inputs whose values are controlled by the DOM itself. React does not maintain the state of the input value; instead, you rely on DOM refs to access the input value when needed.
+
+  3. **Formik**: A popular form management library for React that simplifies form handling by abstracting away the complexities of controlled components and providing utilities for validation, submission, and error handling.
+
+  4. **React Hook Form**: Another form management library for React that emphasizes simplicity and performance. It uses React hooks to manage form state and provides a lightweight and flexible approach to form handling.
+
+  5. **Third-party Libraries**: There are several third-party form management libraries available for React, each offering its own set of features and advantages, such as Redux Form, Final Form, and Formsy React. These libraries often provide advanced form handling capabilities and integrations with validation libraries and UI frameworks.
+  
+
   **[⬆ Back to Top](#table-of-contents)**
 
   ---
+
+
+### What is difference between Declerative and Imparative in React
+
+  In React, the concepts of declarative and imperative programming styles refer to different approaches for defining how the UI should be rendered and updated:
+
+  1. **Declarative**: In a declarative approach, you describe what you want the UI to look like based on the current application state. React components are primarily declarative, meaning you define the UI structure and behavior using JSX and component composition. React takes care of updating the DOM to match the desired state based on changes in the application data.
+
+  2. **Imperative**: In an imperative approach, you explicitly define step-by-step instructions for how to achieve a desired UI state. This often involves directly manipulating the DOM through imperative APIs like `getElementById` or `appendChild`. While imperative programming can be more flexible, it can also lead to more complex and error-prone code, especially in larger applications.
+
+  In summary, React encourages a declarative programming style, where you focus on defining the desired UI state based on application data, while React handles the underlying DOM manipulation. This leads to cleaner, more maintainable, and more predictable code compared to an imperative approach.
+
+  
   **[⬆ Back to Top](#table-of-contents)**
 
   ---
