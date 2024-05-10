@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="60" src="https://img.icons8.com/color/344/javascript.png">
+  <img height="60" src="Image/react.png">
   <i class="fa-brands fa-react"></i>
   <h1>React Interview Code Comprehension Question</h1>
 </div>
